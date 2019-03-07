@@ -29,11 +29,11 @@ class Application(Frame):
 
     def exit_widget(self):
         self.exit_btn = Button(self, text="Close Program", fg="red", command=self.quit)
-        self.exit_btn.pack({"side": "bottom"}, padx=20, pady=10)
+        self.exit_btn.pack({"side": "left"}, padx=20, pady=10)
 
     def generate_pass_widget(self):
-        self.generate_pass_btn = Button(self, text='Generate Password', command=self.generate_pass)
-        self.generate_pass_btn.pack({"side": "bottom"}, padx=20, pady=20)
+        self.generate_pass_btn = Button(self, text='Generate Password', fg="green", command=self.generate_pass)
+        self.generate_pass_btn.pack({"side": "right"}, padx=20, pady=20)
 
     def pwd_options(self):
         group = LabelFrame(text="Password Options:", padx=5, pady=5)
@@ -44,11 +44,11 @@ class Application(Frame):
 
     def pwd_length_scale(self):
         Scale(
-            from_=8, to=50, orient=HORIZONTAL, var=self.pwd_length_val, label="Password length:", length=200
-        ).pack(expand=True)
+            from_=8, to=50, orient=HORIZONTAL, var=self.pwd_length_val, label="Password length:", length=220
+        ).pack({"side": "top"}, pady=30)
 
     def generated_pwd_field(self):
-        Entry(textvariable=self.generated_pwd_val, width=30).pack({'side': 'top'}, expand=True)
+        Entry(textvariable=self.generated_pwd_val, width=30).pack({'side': 'top'}, expand=True, pady=20)
 
     def create_widgets(self):
         self.generated_pwd_field()
