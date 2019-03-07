@@ -11,3 +11,11 @@ bonus if you're a terrible player, they'll never know...
 into that stuff, no one will to be able to pronounce it but hey, at least it's exotic.
 
  *<= Python 3.6*
+ 
+ ## Setup
+ - Clone the repo
+ - Make sure you have python3.6 installed
+ - To run:
+ `python3 app.py`
+ 
+ To see how the password gets generated, have a look at `password_generator.py`
