@@ -20,4 +20,4 @@ into that stuff, no one will to be able to pronounce it but hey, at least it's e
  
  To see how the password gets generated, have a look at `password_generator.py`
 
-![](sneak_peek.gif)
+![](docs/sneak_peek.gif)

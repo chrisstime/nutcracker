@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+"""Password generator GUI"""
+
 from tkinter import *
 from password_generator import generate_password
 
@@ -28,12 +32,12 @@ class Application(Frame):
             self.pop_up_msg()
 
     def exit_widget(self):
-        self.exit_btn = Button(self, text="Close Program", fg="red", command=self.quit)
-        self.exit_btn.pack({"side": "left"}, padx=20, pady=10)
+        exit_btn = Button(self, text="Close Program", fg="red", command=self.quit)
+        exit_btn.pack({"side": "left"}, padx=20, pady=10)
 
     def generate_pass_widget(self):
-        self.generate_pass_btn = Button(self, text='Generate Password', fg="green", command=self.generate_pass)
-        self.generate_pass_btn.pack({"side": "right"}, padx=20, pady=20)
+        generate_pass_btn = Button(self, text='Generate Password', fg="green", command=self.generate_pass)
+        generate_pass_btn.pack({"side": "right"}, padx=20, pady=20)
 
     def pwd_options(self):
         group = LabelFrame(text="Password Options:", padx=5, pady=5)
