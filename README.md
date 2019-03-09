@@ -16,7 +16,10 @@ into that stuff, no one will to be able to pronounce it but hey, at least it's e
  - Clone the repo
  - Make sure you have python3.6 installed
  - To run:
- `python3 app.py`
+ ```
+ cd ~/nutcracker/app
+ python3 app.py
+ ```
  
  To see how the password gets generated, have a look at `password_generator.py`
 
